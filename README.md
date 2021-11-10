@@ -1,6 +1,8 @@
 # A Calculator made in HTML and JavaScript!
 Totaly a raw HTML and JS calculator, simple and objective.
 
+![Calculator](https://github.com/MatheusLeffa/desktop-tutorial/blob/main/img/Calculator.PNG?raw=true)
+
 ## Porpose & Upgrades
 This calculator is a college work I had to do for my algorithms and programming course.
 
