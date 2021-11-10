@@ -1,2 +1,9 @@
-# Calculator HTML JS
- Just a simple calculator just made of HTML and JS. Test it here https://jsfiddle.net/z87v23og/
+# A Calculator made in HTML and JavaScript!
+Totaly a raw HTML and JS calculator, simple and objective.
+
+## Porpose & Upgrades
+This calculator is a college work I had to do for my algorithms and programming course.
+
+As my first HTML project, I think I've done a good job, but I know it's "ugly" without CSS, so I'll refine this project while training my CSS skills with it.
+
+That said, I'll update this project with CSS in the future, and when I feel it's good, I'll share it.
