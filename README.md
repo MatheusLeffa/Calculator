@@ -3,7 +3,7 @@ A totally raw HTML and JS calculator, simple and objective.
 
 ![Calculator](https://github.com/MatheusLeffa/Calculator-HTML-JS/blob/main/img/Calculator.PNG?raw=true)
 
-## Porpose & Upgrades
+## Purpose & Upgrades
 This calculator is a college project I had to do for my algorithms and programming course.
 
 As my first HTML project, I think I've done a good job, but I know it's "raw" without CSS, so I'll refine this project while training my CSS skills with it.
