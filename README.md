@@ -1,5 +1,5 @@
 # A Calculator made in HTML and JavaScript!
-Totaly a raw HTML and JS calculator, simple and objective.
+A totally raw HTML and JS calculator, simple and objective.
 
 ![Calculator](https://github.com/MatheusLeffa/Calculator-HTML-JS/blob/main/img/Calculator.PNG?raw=true)
 
