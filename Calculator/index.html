@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="Code.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
 
-<body align="center">
+<body>
     <header>
         <h1>Calculadora</h1>
         <h3>Trabalho A1 - Algoritimos e programação</h3>
@@ -18,79 +19,79 @@
 
     <!--Sessão referente à calculadora.-->
     <section name="Calculator">
-        <!--Formulário da calculadora. Utilizei o atributo "onsubmit" com os parâmetros "resultado(); return false;" para que pudesse apertar a tecla "Enter" dentro do display para realizar o resultado da operação, ao invés de dar Submit no formulário, atualizando a página. -->
-        <form id="form1" onsubmit="resultado(); return false;">
+        <!--Formulário da calculadora.-->
+        <form id="form1" onsubmit="result(); return false;">
             <!--Display editável-->
             <input id="display" type="text" name="display" placeholder="Digite aqui" size="10" required />
 
             <br>
 
             <!--C (Apaga tudo)-->
-            <input class="Clean" type="reset" value="C" style="color: red" />
+            <input id="EraseButtons" class="Clear" type="reset" value="C" />
             <!--Apaga o ultimo caracter-->
-            <input class="EraseLastDigit" type="button" value="⌫" onclick="apagarCaracter()" />
+            <input id="EraseButtons" class="EraseLastDigit" type="button" value="⌫" onclick="EraseLastDigit()" />
 
             <br>
 
             <!--"**"(Potência)-->
-            <input class="symbols" type="button" value="**" onclick="form.display.value += '**'" />
+            <input id="button" class="symbols" type="button" value="**" onclick="form.display.value += '**'" />
             <!--7-->
-            <input class="numbers" type="button" value="7" onclick="form.display.value += 7" />
+            <input id="button" class="numbers" type="button" value="7" onclick="form.display.value += 7" />
             <!--8-->
-            <input class="numbers" type="button" value="8" onclick="form.display.value += 8" />
+            <input id="button" class="numbers" type="button" value="8" onclick="form.display.value += 8" />
             <!--9-->
-            <input class="numbers" type="button" value="9" onclick="form.display.value += 9" />
+            <input id="button" class="numbers" type="button" value="9" onclick="form.display.value += 9" />
             <!--"+"(Soma)-->
-            <input class="symbols" type="button" value="+" onclick="form.display.value += '+'" />
+            <input id="button" class="symbols" type="button" value="+" onclick="form.display.value += '+'" />
 
             <br>
 
             <!--"√"(Raiz quadrada)-->
-            <input class="symbols" type="button" value="√" onclick="form.display.value += '**0.5'" />
+            <input id="button" class="symbols" type="button" value="√" onclick="form.display.value += '**0.5'" />
             <!--4-->
-            <input class="numbers" type="button" value="4" onclick="form.display.value += 4" />
+            <input id="button" class=" numbers" type="button" value="4" onclick="form.display.value += 4" />
             <!--5-->
-            <input class="numbers" type="button" value="5" onclick="form.display.value += 5" />
+            <input id="button" class=" numbers" type="button" value="5" onclick="form.display.value += 5" />
             <!--6-->
-            <input class="numbers" type="button" value="6" onclick="form.display.value += 6" />
+            <input id="button" class=" numbers" type="button" value="6" onclick="form.display.value += 6" />
             <!--"-"(Subtração)-->
-            <input class="symbols" type="button" value="-" onclick="form.display.value += '-'" />
+            <input id="button" class=" symbols" type="button" value="-" onclick="form.display.value += '-'" />
 
             <br>
 
             <!--Parenteses Esquerdo-->
-            <input class="symbols" type="button" value="&#40;" onclick="form.display.value += '&lpar;'" />
+            <input id="button" class=" symbols" type="button" value="&#40;" onclick="form.display.value += '&lpar;'" />
             <!--1-->
-            <input class="numbers" type="button" value="1" onclick="form.display.value += 1" />
+            <input id="button" class=" numbers" type="button" value="1" onclick="form.display.value += 1" />
             <!--2-->
-            <input class="numbers" type="button" value="2" onclick="form.display.value += 2" />
+            <input id="button" class=" numbers" type="button" value="2" onclick="form.display.value += 2" />
             <!--3-->
-            <input class="numbers" type="button" value="3" onclick="form.display.value += 3" />
+            <input id="button" class=" numbers" type="button" value="3" onclick="form.display.value += 3" />
             <!--"*"(Multiplicação)-->
-            <input class="symbols" type="button" value="*" onclick="form.display.value += '*'" />
+            <input id="button" class=" symbols" type="button" value="*" onclick="form.display.value += '*'" />
 
             <br>
 
             <!--Parenteses Direito-->
-            <input class="symbols" type="button" value="&#41;" onclick="form.display.value += '&rpar;'" />
+            <input id="button" class=" symbols" type="button" value="&#41;" onclick="form.display.value += '&rpar;'" />
             <!--"."(Ponto, para numero com virgula)-->
-            <input class="symbols" type="button" value="." onclick="form.display.value += '.'" />
+            <input id="button" class=" symbols" type="button" value="." onclick="form.display.value += '.'" />
             <!--0-->
-            <input class="numbers" type="button" value="0" onclick="form.display.value += 0" />
+            <input id="button" class=" numbers" type="button" value="0" onclick="form.display.value += 0" />
             <!--"="(Retorna o resultado da conta no display e no histórico)-->
-            <input class="symbols" type="button" value="=" onclick="resultado()" />
+            <input id="button" class=" result" type="button" value="=" onclick="result()" />
             <!--"/"(Divisão)-->
-            <input class="symbols" type="button" value="/" onclick="form.display.value += '/'" />
+            <input id="button" class=" symbols" type="button" value="/" onclick="form.display.value += '/'" />
 
             <br><br>
 
-            <input class="CleanHistory" type="button" value="Limpar histórico" onclick="limparHistórico()" />
+            <input id="CleanHistory" class="CleanHistory" type="button" value="Limpar histórico" onclick="cleanHistory()" />
         </form>
     </section>
 
     <!--Sessão referente ao histórico-->
-    <section name="History">
-        <table border="2" align="center">
+    <section id="history">
+        <table id="table">
             <thead>
                 <th>Histórico</th>
             </thead>
@@ -98,7 +99,7 @@
                 <tr>
                     <td>
                         <!--Tabela vazia para as operações serem agregadas à tabela a partir da função "resultado"-->
-                        <ul id="lista"></ul>
+                        <ul id="list"></ul>
                     </td>
                 </tr>
             </tbody>

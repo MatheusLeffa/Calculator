@@ -1,7 +1,7 @@
 // Retorna para o display e histórico, o resultado da operação. Função ativada após clicar no botão "=", representado na linha 59 do HTML. 
-function resultado() {
-    let operaçao = document.getElementById("display").value;
-    let historico; 
+function result() {
+    let operation = document.getElementById("display").value;
+    let history; 
 
     if (/[^0-9\+\-\*\/\.\(\)\**]/.test(form1.display.value)) {
 
@@ -13,34 +13,34 @@ function resultado() {
         if (Number.isInteger(result)) { 
             
             document.getElementById("display").value = result; 
-            historico = `${operaçao} = ${result}`;
+            history = `${operation} = ${result}`;
 
         } else {
 
             document.getElementById("display").value = result.toFixed(2); 
-            historico = `${operaçao} = ${result.toFixed(2)}`;
+            history = `${operation} = ${result.toFixed(2)}`;
 
         }
-        list(historico);
+        list(history);
     }
 }
 
 // Função para criar elementos no historico com a conta e o resultado das operações.
 function list(operação) {
-    let lista = document.getElementById("lista");
+    let list = document.getElementById("list");
     let item = document.createElement("li");
     item.appendChild(document.createTextNode(operação));
-    lista.appendChild(item);
+    list.appendChild(item);
 }
 
 // Limpa o histórico. Função ativada após clicar no botão "Limpar histórico", representado na linha 40 do HTML. 
-function limparHistórico() {
-    let lista = document.getElementById("lista");
-    lista.innerHTML = "";
+function cleanHistory() {
+    let list = document.getElementById("list");
+    list.innerHTML = "";
 }
 
 // Apaga o último caractere do display.
-function apagarCaracter() {
+function EraseLastDigit() {
     let str = document.getElementById("display").value;
     str = str.substring(0, str.length - 1);
     document.getElementById("display").value = str;

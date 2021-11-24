@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+}
+
+header {
+    font-size: 20px;
+}
+
+table, th {
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px groove #c9c9c9e8;
+    border-radius: 7px;
+}
+
+.Clear{
+    color: #ff0000;
+}
+
+.result {
+    background-color: rgb(0 255 0 / 32%);
+}
+
+#display {
+    margin: 22px;
+    width: 325px;
+    height: 36px;
+    font-size: 30px;
+}
+
+#EraseButtons {
+    font-size: 25px;
+    width: 77px;
+    height: 36px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10%;
+    cursor: pointer;
+    contain: content;
+    line-height: 0;
+}
+
+#button {
+    font-size: 25px;
+    width: 50px;
+    height: 45px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10%;
+    cursor: pointer;
+    contain: content;
+}
+
+#CleanHistory{
+    font-family: 'Coming Soon', cursive;
+    height: auto;
+    width: auto;
+    font-size: 70%;
+    cursor: pointer;
+    contain: content;
+}
