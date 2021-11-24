@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit&display=swap');
+
 body {
     text-align: center;
 }
 
 header {
-    font-size: 20px;
+    font-size: 21px;
+    font-family: 'Outfit', sans-serif;
 }
 
-table, th {
-    margin-left: auto;
-    margin-right: auto;
-    border: 7px groove #c9c9c9e8;
-    border-radius: 7px;
+th {
+    border-bottom: 5px double #000a1b;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+td {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .Clear{
@@ -22,6 +29,7 @@ table, th {
 }
 
 #display {
+    font-family: 'Open Sans', sans-serif;
     margin: 22px;
     width: 325px;
     height: 36px;
@@ -41,6 +49,7 @@ table, th {
 }
 
 #button {
+    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     width: 50px;
     height: 45px;
@@ -52,10 +61,17 @@ table, th {
 }
 
 #CleanHistory{
-    font-family: 'Coming Soon', cursive;
-    height: auto;
-    width: auto;
-    font-size: 70%;
+    height: 30px;
+    width: fit-content;
+    font-size: 17px;
     cursor: pointer;
     contain: content;
+    margin: 2px;
+}
+
+#table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px double #000a1b;
+    border-radius: 7px;
 }
