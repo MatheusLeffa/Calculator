@@ -3,7 +3,7 @@ A simple and objective HTML/JavaScript calculator.
 
 Test it here https://jsfiddle.net/xtum9561/
 
-![Calculator](https://github.com/MatheusLeffa/Calculator-HTML-JS/blob/main/img/Calculator.PNG?raw=true)
+[![Calculator](https://github.com/MatheusLeffa/Calculator-HTML-JS/blob/main/img/Calculator.PNG?raw=true)](https://jsfiddle.net/xtum9561/)
 
 ## Purpose
 This calculator is a college project I had to do for my algorithms and programming course.
